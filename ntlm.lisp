@@ -45,7 +45,7 @@
           :do (format t "~2D: ~A~%" bit (second desc))))
 
 ;; (decode-nlmp-negotiate-flags #xE20882B7)
-;; 
+;;
 ;; 31: requests Unicode character set encoding
 ;; 30: requests OEM character set encoding
 ;; 29: TargetName field in CHALLENGE_MESSAGE must be supplied
