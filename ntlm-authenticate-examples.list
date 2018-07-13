@@ -1,0 +1,294 @@
+
+(decode-authenticate-message
+ #(#x4e #x54 #x4c #x4d #x53 #x53 #x50 #x00 #x03 #x00 #x00 #x00 #x18 #x00 #x18 #x00
+   #x6e #x00 #x00 #x00 #xf0 #x00 #xf0 #x00 #x86 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x58 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x58 #x00 #x00 #x00 #x16 #x00 #x16 #x00
+   #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00 #x76 #x01 #x00 #x00 #x35 #xa2 #x88 #xe2
+   #x06 #x01 #xb1 #x1d #x00 #x00 #x00 #x0f #xcb #x1a #x5d #x2a #xee #x24 #x95 #xec
+   #x50 #xfd #x21 #xbc #xe6 #x08 #x0f #xa8 #x75 #x00 #x62 #x00 #x75 #x00 #x6e #x00
+   #x74 #x00 #x75 #x00 #x2d #x00 #x73 #x00 #x70 #x00 #x61 #x00 #x6e #x00 #xd8 #xb7
+   #xde #x9e #xd1 #x5b #x0e #x4f #x84 #x2a #x1b #xbc #x25 #xb7 #xdb #xa4 #x65 #x15
+   #x4c #x01 #x52 #x10 #x57 #x9b #x93 #xe6 #x33 #x70 #x47 #x77 #x35 #x99 #x08 #xfc
+   #x82 #xa8 #xdb #xeb #xa8 #xbe #x01 #x01 #x00 #x00 #x00 #x00 #x00 #x00 #x29 #xd1
+   #x81 #xa8 #xdc #x19 #xd4 #x01 #x65 #x15 #x4c #x01 #x52 #x10 #x57 #x9b #x00 #x00
+   #x00 #x00 #x02 #x00 #x04 #x00 #x41 #x00 #x43 #x00 #x01 #x00 #x14 #x00 #x52 #x00
+   #x44 #x00 #x53 #x00 #x2d #x00 #x4c #x00 #x55 #x00 #x4d #x00 #x2d #x00 #x30 #x00
+   #x31 #x00 #x04 #x00 #x0c #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00
+   #x74 #x00 #x03 #x00 #x22 #x00 #x52 #x00 #x44 #x00 #x53 #x00 #x2d #x00 #x4c #x00
+   #x55 #x00 #x4d #x00 #x2d #x00 #x30 #x00 #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00
+   #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00 #x05 #x00 #x0c #x00 #x61 #x00 #x63 #x00
+   #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00 #x07 #x00 #x08 #x00 #x29 #xd1 #x81 #xa8
+   #xdc #x19 #xd4 #x01 #x06 #x00 #x04 #x00 #x02 #x00 #x00 #x00 #x0a #x00 #x10 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x09 #x00 #x22 #x00 #x72 #x00 #x64 #x00 #x73 #x00 #x2d #x00 #x6c #x00 #x75 #x00
+   #x6d #x00 #x2d #x00 #x30 #x00 #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00 #x2e #x00
+   #x69 #x00 #x6e #x00 #x74 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #xf9 #x7f #xf8 #x8c #x8b #x4a #x24 #xd3 #xc0 #x86
+   #x0f #xd5 #xb3 #x7f #x2e #x1f))
+
+(decode-authenticate-message
+ #(#x4e #x54 #x4c #x4d #x53 #x53 #x50 #x00 #x03 #x00 #x00 #x00 #x18 #x00 #x18 #x00
+   #x68 #x00 #x00 #x00 #xf0 #x00 #xf0 #x00 #x80 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x58 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00
+   #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00 #x70 #x01 #x00 #x00 #x35 #xa2 #x88 #xe2
+   #x06 #x01 #xb1 #x1d #x00 #x00 #x00 #x0f #x91 #x39 #xd7 #xab #xb3 #x00 #x6a #x3a
+   #xa3 #x8e #x6c #x0c #x5b #x61 #x6e #xb4 #x6c #x00 #x30 #x00 #x32 #x00 #x33 #x00
+   #x31 #x00 #x33 #x00 #x34 #x00 #x32 #x00 #x0d #x60 #x46 #xf9 #x47 #x58 #x5d #x58
+   #x36 #x77 #xcc #xb2 #xfe #x66 #x20 #x2e #xff #x7c #xd0 #x9c #x12 #xa5 #xca #x01
+   #xc8 #x4f #x08 #x97 #x92 #x19 #x24 #xb1 #xcb #x0c #xc6 #x55 #x83 #x0b #x87 #x33
+   #x01 #x01 #x00 #x00 #x00 #x00 #x00 #x00 #xc2 #x9e #xd1 #x3e #x8a #x1a #xd4 #x01
+   #xff #x7c #xd0 #x9c #x12 #xa5 #xca #x01 #x00 #x00 #x00 #x00 #x02 #x00 #x04 #x00
+   #x41 #x00 #x43 #x00 #x01 #x00 #x14 #x00 #x52 #x00 #x44 #x00 #x53 #x00 #x2d #x00
+   #x4c #x00 #x55 #x00 #x4d #x00 #x2d #x00 #x30 #x00 #x31 #x00 #x04 #x00 #x0c #x00
+   #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00 #x03 #x00 #x22 #x00
+   #x52 #x00 #x44 #x00 #x53 #x00 #x2d #x00 #x4c #x00 #x55 #x00 #x4d #x00 #x2d #x00
+   #x30 #x00 #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00
+   #x74 #x00 #x05 #x00 #x0c #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00
+   #x74 #x00 #x07 #x00 #x08 #x00 #xc2 #x9e #xd1 #x3e #x8a #x1a #xd4 #x01 #x06 #x00
+   #x04 #x00 #x02 #x00 #x00 #x00 #x0a #x00 #x10 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x09 #x00 #x22 #x00 #x72 #x00
+   #x64 #x00 #x73 #x00 #x2d #x00 #x6c #x00 #x75 #x00 #x6d #x00 #x2d #x00 #x30 #x00
+   #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x79 #x50 #x18 #x5f #x94 #x8b #x82 #xf9 #xd8 #x29 #xbb #xd4 #xdb #x99 #x1a #xd9))
+
+
+(:ntlmssp 3
+ :lm-challenge-response #(13 96 70 249 71 88 93 88 54 119 204 178 254 102 32 46 255 124 208 156 18 165 202 1)
+ :nt-challenge-response #(200 79 8 151 146 25 36 177 203 12 198 85 131 11 135 51 1 1 0 0 0 0 0 0 194 158 209 62 138 26 212 1 255 124 208 156 18 165 202 1 0 0 0 0 2 0 4 0 65 0 67 0 1 0 20 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 4 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 3 0 34 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 5 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 7 0 8 0 194 158 209 62 138 26 212 1 6 0 4 0 2 0 0 0 10 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 34 0 114 0 100 0 115 0 45 0 108 0 117 0 109 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+ :domain-name #1=""
+          :user-name #1#
+          :workstation "l0231342"
+          :encrypted-random-session-key #(121 80 24 95 148 139 130 249 216 41 187 212 219 153 26 217)
+          :negotiate-flags (:ntlmssp-negotiate-unicode
+                            :ntlmssp-request-target
+                            :ntlmssp-negotiate-sign
+                            :ntlmssp-negotiate-seal
+                            :ntlmssp-negotiate-ntlm
+                            :ntlmssp-negotiate-oem-workstation-supplied
+                            :ntlmssp-negotiate-always-sign
+                            :ntlmssp-negotiate-extended-session-security
+                            :ntlmssp-negotiate-target-info
+                            :ntlmssp-negotiate-version
+                            :ntlmssp-negotiate-128
+                            :ntlmssp-negotiate-key-exch
+                            :ntlmssp-negotiate-56)
+          :version (:major 6
+                    :minor 1
+                    :build 7601
+                    :ntlm-revision-current 15)
+          :mic #(145 57 215 171 179 0 106 58 163 142 108 12 91 97 110 180)
+          :payload #(108 0 48 0 50 0 51 0 49 0 51 0 52 0 50 0 13 96 70 249 71 88 93 88 54 119 204 178 254 102 32 46 255 124 208 156 18 165 202 1 200 79 8 151 146 25 36 177 203 12 198 85 131 11 135 51 1 1 0 0 0 0 0 0 194 158 209 62 138 26 212 1 255 124 208 156 18 165 202 1 0 0 0 0 2 0 4 0 65 0 67 0 1 0 20 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 4 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 3 0 34 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 5 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 7 0 8 0 194 158 209 62 138 26 212 1 6 0 4 0 2 0 0 0 10 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 34 0 114 0 100 0 115 0 45 0 108 0 117 0 109 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 121 80 24 95 148 139 130 249 216 41 187 212 219 153 26 217))
+
+(decode-authenticate-message
+ #(#x4e #x54 #x4c #x4d #x53 #x53 #x50 #x00 #x03 #x00 #x00 #x00 #x18 #x00 #x18 #x00
+   #x8e #x00 #x00 #x00 #xf0 #x00 #xf0 #x00 #xa6 #x00 #x00 #x00 #x0c #x00 #x0c #x00
+   #x58 #x00 #x00 #x00 #x1a #x00 #x1a #x00 #x64 #x00 #x00 #x00 #x10 #x00 #x10 #x00
+   #x7e #x00 #x00 #x00 #x10 #x00 #x10 #x00 #x96 #x01 #x00 #x00 #x35 #xb2 #x88 #xe2
+   #x06 #x01 #xb1 #x1d #x00 #x00 #x00 #x0f #x06 #x4f #x30 #x6c #x03 #x38 #x3a #x75
+   #x82 #x02 #xd3 #xd0 #xe5 #xf7 #x68 #x85 #x41 #x00 #x43 #x00 #x2e #x00 #x49 #x00
+   #x4e #x00 #x54 #x00 #x42 #x00 #x4f #x00 #x55 #x00 #x52 #x00 #x47 #x00 #x55 #x00
+   #x49 #x00 #x47 #x00 #x4e #x00 #x4f #x00 #x4e #x00 #x50 #x00 #x41 #x00 #x6c #x00
+   #x30 #x00 #x32 #x00 #x33 #x00 #x31 #x00 #x33 #x00 #x34 #x00 #x32 #x00 #x03 #xcd
+   #xbb #x3f #x70 #x49 #xa3 #xd5 #xb4 #x5f #x98 #x29 #x72 #x17 #x86 #x2f #x06 #xe6
+   #x17 #x61 #xa9 #x93 #xfb #x73 #x16 #x1f #xd9 #x5c #x05 #xc8 #xc3 #x3e #x4b #x1f
+   #x31 #x9f #x46 #xe1 #xb5 #x99 #x01 #x01 #x00 #x00 #x00 #x00 #x00 #x00 #xf3 #xf2
+   #x21 #x9c #xa3 #x1a #xd4 #x01 #x06 #xe6 #x17 #x61 #xa9 #x93 #xfb #x73 #x00 #x00
+   #x00 #x00 #x02 #x00 #x04 #x00 #x41 #x00 #x43 #x00 #x01 #x00 #x14 #x00 #x52 #x00
+   #x44 #x00 #x53 #x00 #x2d #x00 #x4c #x00 #x55 #x00 #x4d #x00 #x2d #x00 #x30 #x00
+   #x31 #x00 #x04 #x00 #x0c #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00
+   #x74 #x00 #x03 #x00 #x22 #x00 #x52 #x00 #x44 #x00 #x53 #x00 #x2d #x00 #x4c #x00
+   #x55 #x00 #x4d #x00 #x2d #x00 #x30 #x00 #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00
+   #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00 #x05 #x00 #x0c #x00 #x61 #x00 #x63 #x00
+   #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00 #x07 #x00 #x08 #x00 #xf3 #xf2 #x21 #x9c
+   #xa3 #x1a #xd4 #x01 #x06 #x00 #x04 #x00 #x02 #x00 #x00 #x00 #x0a #x00 #x10 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x09 #x00 #x22 #x00 #x72 #x00 #x64 #x00 #x73 #x00 #x2d #x00 #x6c #x00 #x75 #x00
+   #x6d #x00 #x2d #x00 #x30 #x00 #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00 #x2e #x00
+   #x69 #x00 #x6e #x00 #x74 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #xdb #x53 #x5b #x59 #x63 #x71 #x4b #x64 #x0e #xe2
+   #x1c #x08 #x3e #x17 #xc8 #x42))
+
+(142 24)
+(166 240)
+(88 12)
+(100 26)
+(126 16)
+(406 16)
+
+(:ntlmssp 3
+ :lm-challenge-response #(3 205 187 63 112 73 163 213 180 95 152 41 114 23 134 47 6 230 23 97 169 147 251 115)
+ :nt-challenge-response #(22 31 217 92 5 200 195 62 75 31 49 159 70 225 181 153 1 1 0 0 0 0 0 0 243 242 33 156 163 26 212 1 6 230 23 97 169 147 251 115 0 0 0 0 2 0 4 0 65 0 67 0 1 0 20 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 4 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 3 0 34 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 5 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 7 0 8 0 243 242 33 156 163 26 212 1 6 0 4 0 2 0 0 0 10 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 34 0 114 0 100 0 115 0 45 0 108 0 117 0 109 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+ :domain-name "AC.INT"
+ :user-name "BOURGUIGNONPA"
+ :workstation "l0231342"
+ :encrypted-random-session-key #(219 83 91 89 99 113 75 100 14 226 28 8 62 23 200 66)
+ :negotiate-flags (:ntlmssp-negotiate-unicode
+                   :ntlmssp-request-target
+                   :ntlmssp-negotiate-sign
+                   :ntlmssp-negotiate-seal
+                   :ntlmssp-negotiate-ntlm
+                   :ntlmssp-negotiate-oem-domain-supplied
+                   :ntlmssp-negotiate-oem-workstation-supplied
+                   :ntlmssp-negotiate-always-sign
+                   :ntlmssp-negotiate-extended-session-security
+                   :ntlmssp-negotiate-target-info
+                   :ntlmssp-negotiate-version
+                   :ntlmssp-negotiate-128
+                   :ntlmssp-negotiate-key-exch
+                   :ntlmssp-negotiate-56)
+ :version (:major 6
+           :minor 1
+           :build 7601
+           :ntlm-revision-current 15)
+ :mic #(6 79 48 108 3 56 58 117 130 2 211 208 229 247 104 133)
+ :payload #(65 0 67 0 46 0 73 0 78 0 84 0 66 0 79 0 85 0 82 0 71 0 85 0 73 0 71 0 78 0 79 0 78 0 80 0 65 0 108 0 48 0 50 0 51 0 49 0 51 0 52 0 50 0 3 205 187 63 112 73 163 213 180 95 152 41 114 23 134 47 6 230 23 97 169 147 251 115 22 31 217 92 5 200 195 62 75 31 49 159 70 225 181 153 1 1 0 0 0 0 0 0 243 242 33 156 163 26 212 1 6 230 23 97 169 147 251 115 0 0 0 0 2 0 4 0 65 0 67 0 1 0 20 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 4 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 3 0 34 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 5 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 7 0 8 0 243 242 33 156 163 26 212 1 6 0 4 0 2 0 0 0 10 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 34 0 114 0 100 0 115 0 45 0 108 0 117 0 109 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 219 83 91 89 99 113 75 100 14 226 28 8 62 23 200 66))
+
+
+(decode-authenticate-message
+ #( #x4e #x54 #x4c #x4d #x53 #x53 #x50 #x00 #x03 #x00 #x00 #x00 #x18 #x00 #x18 #x00
+   #x68 #x00 #x00 #x00 #xf0 #x00 #xf0 #x00 #x80 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x58 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00
+   #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00 #x70 #x01 #x00 #x00 #x35 #xa2 #x88 #xe2
+   #x06 #x01 #xb1 #x1d #x00 #x00 #x00 #x0f #x3e #x52 #x13 #x06 #x5f #xa3 #x28 #xe0
+   #xda #x21 #x0a #x56 #xdd #x8d #xa7 #xe3 #x6c #x00 #x30 #x00 #x32 #x00 #x33 #x00
+   #x31 #x00 #x33 #x00 #x34 #x00 #x32 #x00 #xa0 #x9e #xff #xac #x8f #x8f #xda #xea
+   #x94 #xc2 #x60 #xa7 #x26 #xb5 #x9d #x29 #x91 #x0f #xbe #x4a #x76 #xaf #x26 #xd4
+   #x8f #xa8 #xe3 #xd8 #x26 #x7c #x69 #x32 #x29 #xf4 #x33 #x81 #x82 #xd2 #xf8 #xa5
+   #x01 #x01 #x00 #x00 #x00 #x00 #x00 #x00 #xad #xb1 #xb2 #x40 #xa6 #x1a #xd4 #x01
+   #x91 #x0f #xbe #x4a #x76 #xaf #x26 #xd4 #x00 #x00 #x00 #x00 #x02 #x00 #x04 #x00
+   #x41 #x00 #x43 #x00 #x01 #x00 #x14 #x00 #x52 #x00 #x44 #x00 #x53 #x00 #x2d #x00
+   #x4c #x00 #x55 #x00 #x4d #x00 #x2d #x00 #x30 #x00 #x31 #x00 #x04 #x00 #x0c #x00
+   #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00 #x03 #x00 #x22 #x00
+   #x52 #x00 #x44 #x00 #x53 #x00 #x2d #x00 #x4c #x00 #x55 #x00 #x4d #x00 #x2d #x00
+   #x30 #x00 #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00
+   #x74 #x00 #x05 #x00 #x0c #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00
+   #x74 #x00 #x07 #x00 #x08 #x00 #xad #xb1 #xb2 #x40 #xa6 #x1a #xd4 #x01 #x06 #x00
+   #x04 #x00 #x02 #x00 #x00 #x00 #x0a #x00 #x10 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x09 #x00 #x22 #x00 #x72 #x00
+   #x64 #x00 #x73 #x00 #x2d #x00 #x6c #x00 #x75 #x00 #x6d #x00 #x2d #x00 #x30 #x00
+   #x31 #x00 #x2e #x00 #x61 #x00 #x63 #x00 #x2e #x00 #x69 #x00 #x6e #x00 #x74 #x00
+   #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x7d #x30 #xec #x48 #x18 #x7a #xa8 #x86 #x1c #x3a #x1a #x1c #xdf #xac #x10 #x14))
+
+(104 24)
+(128 240)
+(88 0)
+(88 0)
+(88 16)
+(368 16)
+
+(:ntlmssp 3
+ :lm-challenge-response #(160 158 255 172 143 143 218 234 148 194 96 167 38 181 157 41 145 15 190 74 118 175 38 212)
+ :nt-challenge-response #(143 168 227 216 38 124 105 50 41 244 51 129 130 210 248 165 1 1 0 0 0 0 0 0 173 177 178 64 166 26 212 1 145 15 190 74 118 175 38 212 0 0 0 0 2 0 4 0 65 0 67 0 1 0 20 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 4 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 3 0 34 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 5 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 7 0 8 0 173 177 178 64 166 26 212 1 6 0 4 0 2 0 0 0 10 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 34 0 114 0 100 0 115 0 45 0 108 0 117 0 109 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0)
+ :domain-name #1=""
+          :user-name #1#
+          :workstation "l0231342"
+          :encrypted-random-session-key #(125 48 236 72 24 122 168 134 28 58 26 28 223 172 16 20)
+          :negotiate-flags (:ntlmssp-negotiate-unicode
+                            :ntlmssp-request-target
+                            :ntlmssp-negotiate-sign
+                            :ntlmssp-negotiate-seal
+                            :ntlmssp-negotiate-ntlm
+                            :ntlmssp-negotiate-oem-workstation-supplied
+                            :ntlmssp-negotiate-always-sign
+                            :ntlmssp-negotiate-extended-session-security
+                            :ntlmssp-negotiate-target-info
+                            :ntlmssp-negotiate-version
+                            :ntlmssp-negotiate-128
+                            :ntlmssp-negotiate-key-exch
+                            :ntlmssp-negotiate-56)
+          :version (:major 6
+                    :minor 1
+                    :build 7601
+                    :ntlm-revision-current 15)
+          :mic #(62 82 19 6 95 163 40 224 218 33 10 86 221 141 167 227)
+          :payload #(108 0 48 0 50 0 51 0 49 0 51 0 52 0 50 0 160 158 255 172 143 143 218 234 148 194 96 167 38 181 157 41 145 15 190 74 118 175 38 212 143 168 227 216 38 124 105 50 41 244 51 129 130 210 248 165 1 1 0 0 0 0 0 0 173 177 178 64 166 26 212 1 145 15 190 74 118 175 38 212 0 0 0 0 2 0 4 0 65 0 67 0 1 0 20 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 4 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 3 0 34 0 82 0 68 0 83 0 45 0 76 0 85 0 77 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 5 0 12 0 97 0 99 0 46 0 105 0 110 0 116 0 7 0 8 0 173 177 178 64 166 26 212 1 6 0 4 0 2 0 0 0 10 0 16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9 0 34 0 114 0 100 0 115 0 45 0 108 0 117 0 109 0 45 0 48 0 49 0 46 0 97 0 99 0 46 0 105 0 110 0 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 125 48 236 72 24 122 168 134 28 58 26 28 223 172 16 20))
+
+(decode-authenticate-message
+ #(#x4e #x54 #x4c #x4d #x53 #x53 #x50 #x00 #x03 #x00 #x00 #x00 #x01 #x00 #x01 #x00
+   #x68 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x69 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x58 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00
+   #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00 #x69 #x00 #x00 #x00 #x35 #xa2 #x88 #xe2
+   #x06 #x01 #xb1 #x1d #x00 #x00 #x00 #x0f #xda #x7f #xc5 #x06 #x49 #x54 #xc8 #xa3
+   #x48 #xc2 #xf5 #xda #x2b #x76 #xab #x2e #x6c #x00 #x30 #x00 #x32 #x00 #x33 #x00
+   #x31 #x00 #x33 #x00 #x34 #x00 #x32 #x00 #x00 #x82 #x42 #xa0 #xa0 #x3f #xe9 #xe9
+   #xea #x05 #x43 #xab #xcd #x4f #xe4 #x56 #xb0))
+
+(104 1)
+(105 0)
+(88 0)
+(88 0)
+(88 16)
+(105 16)
+
+(:ntlmssp 3
+ :lm-challenge-response #(0)
+ :nt-challenge-response #()
+ :domain-name #1=""
+          :user-name #1#
+          :workstation "l0231342"
+          :encrypted-random-session-key #(130 66 160 160 63 233 233 234 5 67 171 205 79 228 86 176)
+          :negotiate-flags (:ntlmssp-negotiate-unicode
+                            :ntlmssp-request-target
+                            :ntlmssp-negotiate-sign
+                            :ntlmssp-negotiate-seal
+                            :ntlmssp-negotiate-ntlm
+                            :ntlmssp-negotiate-oem-workstation-supplied
+                            :ntlmssp-negotiate-always-sign
+                            :ntlmssp-negotiate-extended-session-security
+                            :ntlmssp-negotiate-target-info
+                            :ntlmssp-negotiate-version
+                            :ntlmssp-negotiate-128
+                            :ntlmssp-negotiate-key-exch
+                            :ntlmssp-negotiate-56)
+          :version (:major 6
+                    :minor 1
+                    :build 7601
+                    :ntlm-revision-current 15)
+          :mic #(218 127 197 6 73 84 200 163 72 194 245 218 43 118 171 46)
+          :payload #(108 0 48 0 50 0 51 0 49 0 51 0 52 0 50 0 0 130 66 160 160 63 233 233 234 5 67 171 205 79 228 86 176))
+
+(decode-authenticate-message
+ #(#x4e #x54 #x4c #x4d #x53 #x53 #x50 #x00 #x03 #x00 #x00 #x00 #x01 #x00 #x01 #x00
+   #x68 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x69 #x00 #x00 #x00 #x00 #x00 #x00 #x00
+   #x58 #x00 #x00 #x00 #x00 #x00 #x00 #x00 #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00
+   #x58 #x00 #x00 #x00 #x10 #x00 #x10 #x00 #x69 #x00 #x00 #x00 #x35 #xaa #x88 #xe2
+   #x06 #x01 #xb1 #x1d #x00 #x00 #x00 #x0f #x76 #x81 #xfb #xb4 #x60 #x03 #x84 #x89
+   #x97 #x83 #x03 #xaf #xc1 #x00 #x19 #xa7 #x6c #x00 #x30 #x00 #x32 #x00 #x33 #x00
+   #x31 #x00 #x33 #x00 #x34 #x00 #x32 #x00 #x00 #xc7 #x80 #x8d #xda #x9d #xb2 #x66
+   #xdf #xb2 #x1c #x31 #x96 #xdd #xf3 #xcd #x30))
+
+(104 1)
+(105 0)
+(88 0)
+(88 0)
+(88 16)
+(105 16)
+
+(:ntlmssp 3
+ :lm-challenge-response #(0)
+ :nt-challenge-response #()
+ :domain-name #1=""
+          :user-name #1#
+          :workstation "l0231342"
+          :encrypted-random-session-key #(199 128 141 218 157 178 102 223 178 28 49 150 221 243 205 48)
+          :negotiate-flags (:ntlmssp-negotiate-unicode
+                            :ntlmssp-request-target
+                            :ntlmssp-negotiate-sign
+                            :ntlmssp-negotiate-seal
+                            :ntlmssp-negotiate-ntlm nil
+                            :ntlmssp-negotiate-oem-workstation-supplied
+                            :ntlmssp-negotiate-always-sign
+                            :ntlmssp-negotiate-extended-session-security
+                            :ntlmssp-negotiate-target-info
+                            :ntlmssp-negotiate-version
+                            :ntlmssp-negotiate-128
+                            :ntlmssp-negotiate-key-exch
+                            :ntlmssp-negotiate-56)
+          :version (:major 6
+                    :minor 1
+                    :build 7601
+                    :ntlm-revision-current 15)
+          :mic #(118 129 251 180 96 3 132 137 151 131 3 175 193 0 25 167)
+          :payload #(108 0 48 0 50 0 51 0 49 0 51 0 52 0 50 0 0 199 128 141 218 157 178 102 223 178 28 49 150 221 243 205 48))
