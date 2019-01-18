@@ -31,7 +31,7 @@
                                                         :defaults *load-truename*)
                                          #P"~/src/public/FreeRDP-devtools/ntstatus/"))
         (entries '()))
-    
+
     (dolist (table (list (with-open-file (ntstatus "NTSTATUS-Values.xml")
                            (xmls:parse ntstatus :quash-errors nil))
                          (with-open-file (ntstatus "HRESULT-Values.xml")
@@ -145,18 +145,23 @@ void ntstatus_report(unsigned long value)
           (gen-c-status-code-case codes "value" "print_nt_status")))
 
 
-(let ((name #P"ntstatus"))
-  (with-open-file (*standard-output* (merge-pathnames name #P".c")
-                                     :direction :output
-                                     :if-does-not-exist :create
-                                     :if-exists :supersede)
-    (generate-ntstatus-report-source
-     (windows-status-codes)))
-  (with-open-file (*standard-output* (merge-pathnames name #P".h")
-                                     :direction :output
-                                     :if-does-not-exist :create
-                                     :if-exists :supersede)
-    (generate-ntstatus-report-header)))
+(defun generate-ntstatus-report-header ()
+  (warn "Not implemented yet.")
+  (values))
 
+(defun
+ (let ((name #P"ntstatus"))
+   (with-open-file (*standard-output* (merge-pathnames name #P".c")
+                                      :direction :output
+                                      :if-does-not-exist :create
+                                      :if-exists :supersede)
+     (generate-ntstatus-report-source
+      (windows-status-codes)))
+   (with-open-file (*standard-output* (merge-pathnames name #P".h")
+                                      :direction :output
+                                      :if-does-not-exist :create
+                                      :if-exists :supersede)
+     (generate-ntstatus-report-header))))
 
-
+(pwd)
+nil
